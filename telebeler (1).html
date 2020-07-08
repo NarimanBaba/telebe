@@ -1,0 +1,225 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+
+    <title>Telebeler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+tbody > tr {
+    cursor: pointer;
+}
+
+.result{
+    margin-top:20px;
+}
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav" style="padding: 20px 0px;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav" href="#"><img src="img/logo.jpeg" style="width: 50px; position: relative; top: -14px;"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="index.html">Əsas səhifə</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="content-section-a">
+
+    <div class="container">
+
+        <h1> Telebeler <small> - click on for details</small></h1>
+
+        <hr>
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>Soyad</th>
+                <th>Ad</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>Babayev</td>
+                <td>Neriman</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Eynullazade</td>
+                <td>Efsane</td>
+            </tr>
+            <tr>
+                 <td>3</td>
+                 <td>Abdullayeva</td>
+                 <td>Esmira</td>
+
+             </tr>
+             <tr>
+                  <td>4</td>
+                  <td>Ağayeva</td>
+                  <td>Sidiqə</td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Bəndəliyev</td>
+                  <td>Ağaəli</td>
+             </tr>
+             <tr>
+                   <td>6></td>
+                   <td>Elesgerov</td>
+                   <td>Hilal</td> 
+              </tr>
+              <tr>
+                    <td>7</td>
+                     <td>Feyzullayeva</td>
+                    <td>Gulnar</td>
+              </tr>
+              <tr>
+                    <td>8</td>
+                    <td>Zeynalova</td>
+                    <td>Ayise</td>
+               </tr>
+               <tr>
+                    <td>9</td>
+                    <td>Memmedova</td>
+                     <td>Selcan</td>      
+                </tr>
+                <tr>
+                      <td>10</td>
+                      <td>ISgenderova</td>
+                      <td>Firuze</td>
+                </tr>
+
+
+        </tbody>
+        </table>
+
+    </div>
+    <!-- /.container -->
+    <div class="result"></div>
+</div>
+<!-- /.content-section-a -->
+
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
+                <h4 class="modal-title" id="myModalLabel"> Telebe nomresi -  <strong class="nomre">02051</strong> </h4>
+            </div>
+            <div class="modal-body">
+
+
+                    <img src="./img/ipad.png" alt="teste" class="img" style="width: 528px; height: 264px;">
+
+            </div>
+
+            <div class="modal-footer">
+
+                <div class="text-right pull-right col-md-3">
+                    Rubluk ortalama qiymet <br/>
+                    <span class="h3 text-muted"><strong> 78 </strong></span>
+                </div>
+
+                <div class="text-right pull-right col-md-3">
+                    Illik ortalama qiymet <br/>
+                    <span class="h3 text-muted"><strong> 80 </strong></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fim Modal-->
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$(function () {
+    /* BOOTSNIPP FULLSCREEN FIX */
+    if (window.location == window.parent.location) {
+        $('#back-to-bootsnipp').removeClass('hide');
+        $('.alert').addClass('hide');
+    }
+
+    $('#fullscreen').on('click', function(event) {
+        event.preventDefault();
+        window.parent.location = "http://bootsnipp.com/iframe/Q60Oj";
+    });
+
+    $('tbody > tr').on('click', function(event) {
+        var $row = $(this).closest("tr"),       // Finds the closest row <tr>
+            $tds = $row.find("td:nth-child(1)");             // Finds all children <td> elements
+
+        var $row = $(this).closest("tr"),       // Finds the closest row <tr>
+            $soyad = $row.find("td:nth-child(2)");             // Finds all children <td> elements
+
+        var $row = $(this).closest("tr"),       // Finds the closest row <tr>
+            $ad = $row.find("td:nth-child(3)");             // Finds all children <td> elements
+
+        event.preventDefault();
+
+	   $('#myModal').find('.nomre').text($tds.text())
+	  //  $('#myModal').find('.soyad').text($soyad.text())
+	  // $('#myModal').find('.ad').text($ad.text())
+	   $('#myModal').find('.img').attr("src","img/telebe/"+$tds.text()+".jpg")
+
+       $('#myModal').modal('show');
+    })
+
+    $('.btn-mais-info').on('click', function(event) {
+        $( '.open_info' ).toggleClass( "hide" );
+    })
+
+
+});
+	</script>
+</body>
+</html>
